@@ -1,4 +1,4 @@
-name: Java CI
+﻿name: Java CI
 
 on:
   push:
@@ -22,4 +22,5 @@ jobs:
           cache: maven
 
       - name: Build and test with Maven
+        working-directory: Java
         run: mvn --batch-mode --no-transfer-progress test
