@@ -26,7 +26,7 @@ public class InheritanceSortedIntListTest {
     @Before
     public void setUp() {
         list1 = new InheritanceSortedIntList();
-        list2 = new InheritanceSortedIntList(
+        list2 = new InheritanceSortedIntList();
     }
 
     /**
