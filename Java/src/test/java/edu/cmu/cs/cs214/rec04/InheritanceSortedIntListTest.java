@@ -26,13 +26,29 @@ public class InheritanceSortedIntListTest {
     @Before
     public void setUp() {
         list1 = new InheritanceSortedIntList();
-        list2 = new InheritanceSortedIntList();
+        list2 = new InheritanceSortedIntList(
     }
 
     /**
      * Tests for the add() method.
      */
-    
+    @Test
+    public void testAdd() {
+        // add 5 elements to our list.
+        list1.add(1);
+        list1.add(3);
+        list1.add(2);
+        list1.add(4);
+        list1.add(2);
+        System.out.println(list1.getTotalAdded());
+        // check that the total number of elements added is 5.
+        assertTrue(list1.getTotalAdded() == 5);
+        printList(list1);
+    }
+
+    /**
+     * Tests for the addAll() method.
+     */
     @Test
     public void testAddAll() {
         // add 5 elements to our first list.
